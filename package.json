@@ -1,0 +1,27 @@
+{
+  "name": "palmbaydaycares.com",
+  "version": "1.0.0",
+  "description": "This is the main website for Palm Bay Websites",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/website-company/pbd.git"
+  },
+  "keywords": [
+    "Palm",
+    "Bay",
+    "Daycares"
+  ],
+  "author": "Website-Company.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/website-company/pbd/issues"
+  },
+  "homepage": "https://github.com/website-company/pbd#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
+}
