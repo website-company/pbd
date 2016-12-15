@@ -9,8 +9,8 @@ module.exports = function(grunt){
                 },
                 files: [{
                     expand: true,
-                    cwd: 'cwd/sass/',
-                    src: ['**.scss'],
+                    cwd: 'cwd/scss/',
+                    src: ['main.scss'],
                     dest: 'public/css/',
                     ext: '.css'
                 }]
@@ -46,7 +46,7 @@ module.exports = function(grunt){
             },
             css: {
                 files: ['cwd/sass/*.scss','cwd/html/*.php','cwd/js/*.js'],
-                tasks: ['sass','htmlclean','uglify','cssmin']
+                tasks: ['sass','htmlclean','uglify']
             }
 
         }
