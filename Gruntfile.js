@@ -31,21 +31,12 @@ module.exports = function(grunt){
                 }
             }
         },
-        cssmin: {
-            options: {
-                shorthandCompacting: true,
-            },
-            target: {
-                files: {
-                }
-            }
-        },
         watch: {
             options: {
                 livereload: true,
             },
             css: {
-                files: ['cwd/sass/*.scss','cwd/html/*.php','cwd/js/*.js'],
+                files: ['cwd/scss/*.scss','cwd/html/*.php','cwd/js/*.js'],
                 tasks: ['sass','htmlclean','uglify']
             }
 

@@ -1,5 +1,5 @@
 <?php
-
+require('public/html/_constants.php');
 $page_url = ($_GET['page_url']) ? :'home';
 $page_url = preg_replace('/.html/','',$page_url);
 

@@ -1,9 +1,16 @@
 @import "constant";
+@import "fontAwesome";
 @import "normalize";
 @import "bootstrap";
+@import "header";
+@import "homepage";
 
+h1,h2,h3,h4,h5,h6,p{
+  -webkit-font-smoothing: antialiased;
+}
 h1{
   font-family: Sansation-Bold;
+  color:$theme-blue;
 }
 h2{
   font-family: Sansation-Regular;

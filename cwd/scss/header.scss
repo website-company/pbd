@@ -1,0 +1,132 @@
+header{
+  font-family: Sansation-Bold;
+  .heading{
+    color: $theme-green;
+    font-size: 22px;
+    font-family: Sansation-Regular;
+  }
+  h4{
+    text-align: center;
+    font-size: 23px;
+    margin-top: 32px;
+    color: $theme-blue;
+  }
+  nav{
+    ul{
+      padding: 0;
+      margin: 17px 0 0 0;
+      text-align: right;
+
+      li{
+        display: inline-block;
+        list-style: none;
+
+        a{
+          color:$theme-blue;
+          font-size: 14px;
+          display: inline-block;
+          padding: 11px;
+          cursor: pointer;
+          border: 1px solid #60c2e0;
+          margin: 0 5px;
+          border-radius: 6px;
+          font-family: Sansation-Regular;
+          @include transition(all .4s ease);
+
+          &:hover{
+            color: #ffffff;
+            background: $theme-blue;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .social{
+    display: inline-block;
+    margin: 13px 0 0 0;
+    padding: 0;
+
+      li{
+        display: inline-block;
+        list-style: none;
+
+        .fa{
+          font-size: 33px;
+          margin: 3px 4px;
+          text-align: center;
+          cursor: pointer;
+        }
+      }
+  }
+  .contact,a{
+    color: $theme-blue;
+    font-size: 22px;
+    line-height: 19px;
+
+    &:hover{
+      text-decoration: none;
+      color:$theme-blue;
+      cursor: text;
+    }
+
+    small{
+      display: inline-block;
+      clear: left;
+      font-size: 14px;
+      a{
+        font-size: 14px;
+
+        &:hover{
+          text-decoration: none;
+          color: $theme-blue;
+          cursor: pointer;
+        }
+        .fa{
+          color: $theme-green;
+          margin-left: 5px;
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}

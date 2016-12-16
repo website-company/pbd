@@ -5,4 +5,10 @@ $page_keywords = "error, 404";
 
 require('public/html/header.php');
 ?>
-<h1>Page Not Found</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Page Not Found</h1>
+        </div>
+    </div>
+</div>

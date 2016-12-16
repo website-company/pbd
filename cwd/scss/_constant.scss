@@ -10,3 +10,13 @@
   font-family: Sansation-Regular;
   src: url(/public/fonts/Sansation-Regular.ttf);
 }
+
+@mixin transition($transition) {
+  -moz-transition:    $transition;
+  -o-transition:      $transition;
+  -webkit-transition: $transition;
+  transition:         $transition;
+}
+
+$theme-blue : #60C2E0;
+$theme-green : #68B124;
