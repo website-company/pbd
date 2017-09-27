@@ -9,8 +9,8 @@ module.exports = function(grunt){
                 },
                 files: [{
                     expand: true,
-                    cwd: 'cwd/scss/',
-                    src: ['main.scss'],
+                    cwd: 'cwd/scss-theme-1/',
+                    src: ['theme1.scss'],
                     dest: 'public/css/',
                     ext: '.css'
                 }]
@@ -21,13 +21,13 @@ module.exports = function(grunt){
                 expand: true,
                 cwd: 'cwd/html',
                 src: '**/*.php',
-                dest: 'public/html'
+                dest: 'pbd_press/wp-content/themes/pbd-theme/'
             }
         },
         uglify: {
             my_target: {
                 files: {
-                    'public/js/main.js': ['cwd/js/main.js']
+                    'public/js/main.js': ['cwd/js/jquery-3.1.1.js','cwd/js/slick.js','cwd/js/main.js','cwd/js/equal-heights.js']
                 }
             }
         },
@@ -36,7 +36,7 @@ module.exports = function(grunt){
                 livereload: true,
             },
             css: {
-                files: ['cwd/scss/*.scss','cwd/html/*.php','cwd/js/*.js'],
+                files: ['cwd/scss/*.scss','cwd/html/*.php','cwd/js/*.js','cwd/scss-theme-1/*.scss'],
                 tasks: ['sass','htmlclean','uglify']
             }
 

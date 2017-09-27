@@ -17,6 +17,18 @@
   -webkit-transition: $transition;
   transition:         $transition;
 }
+@mixin horizontalGradient($left, $right){
+  background: #0f1a1c;
+  background: -moz-linear-gradient(left,  $left 0%, $right 100%);
+  background: -webkit-linear-gradient(left,  $left 0%,$right 100%);
+  background: linear-gradient(to right,  $left 0%,$right 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$left, endColorstr=$right,GradientType=1 );
 
-$theme-blue : #60C2E0;
-$theme-green : #68B124;
+}
+
+$theme-blue : #41d4fd;
+$theme-green : #285b10;
+$header-blue : #99CCFF;
+$body-blue : #CCE5FF;
+$theme-color-3 : #be6f3b;
+$theme-yellow : #d6f163;

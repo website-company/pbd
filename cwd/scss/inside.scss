@@ -1,0 +1,13 @@
+@import "constant";
+.inside-box{
+  background: #ffffff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding:20px;
+}
+.inside{
+  h2{
+    text-align: left !important;
+  }
+}

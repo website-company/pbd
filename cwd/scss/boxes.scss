@@ -1,0 +1,31 @@
+.box1{
+  background: rgba(255,255,255,0.08);
+  width: auto;
+  border: rgba(255,255,255,0.1) 2px solid;
+  font-size: 16px;
+  margin-bottom: 30px;
+
+  .heading{
+    color: #ffffff;
+    font-size: 1.7em;
+    text-transform: capitalize;
+    display: block;
+    margin: 6px;
+    background: #28a74a;
+    padding: 10px;
+    text-align: center;
+
+    .fa{
+      float: left;
+      color: #4376bc;
+      font-size: 24px;
+      margin-right: 6px;
+    }
+  }
+  p{
+    color: #ffffff;
+    font-size: 1em;
+    line-height: 24px;
+    margin:10px;
+  }
+}
